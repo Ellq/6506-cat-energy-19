@@ -28,7 +28,81 @@
     </nav>
   </header>
 
-  <!-- later -->
+  <main>
+    <section class="selection">
+      <h1 class="selection__title">Подбор программы</h1>
+      <p>Заполните анкету и мы подберём программу питания для вашего кота</p>
+
+      <form action="https://echo.htmlacademy.ru" method="GET" class="selection__form">
+        <fieldset>
+          <label for="selection-name">Имя:*</label>
+          <input type="text" name="selection-name" id="selection-name" value="Барсик" required>
+          <label for="selection-weight">Вес (КГ):*</label>
+          <input type="text" name="selection-weight" id="selection-weight" value="7" required>
+          <label for="selection-age">Возраст (лет):</label>
+          <input type="text" name="selection-age" id="selection-age" value="7">
+        </fieldset>
+        <fieldset>
+          <label>
+            <input type="radio" name="selection-goal" id="selection-weight-loss" value="Похудение">
+            Похудение
+          </label>
+          <label>
+            <input type="radio" name="selection-goal" id="selection-weight-gain" value="Набор массы">
+            Набор массы
+          </label>
+          <label>
+            <input type="radio" name="selection-goal" id="selection-dont-know" value="Не знаю (нужен ваш совет)">
+            Не знаю (нужен ваш совет)
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Контактные данные (владельца кота)
+          </legend>
+          <label for="selection-email">E-mail:*</label>
+          <input type="email" name="selection-email" id="selection-email">
+          <label for="selection-phone">Телефон:*</label>
+          <input type="tel" name="selection-phone" id="selection-phone">
+        </fieldset>
+        <fieldset>
+          <legend>Комментарий</legend>
+          <textarea name="selection-comment" id="selection-comment" cols="30" rows="10"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <label>
+            <input type="checkbox" name="selection-sweetener" id="selection-sweetener">
+            Сахарозаменитель
+          </label>
+          <label>
+            <input type="checkbox" name="selection-water" id="selection-water">
+            Питьевая вода
+          </label>
+          <label>
+            <input type="checkbox" name="selection-milk" id="selection-milk">
+            Молоко
+          </label>
+          <label>
+            <input type="checkbox" name="selection-vitamins" id="selection-vitamins">
+            Витамины
+          </label>
+        </fieldset>
+        <button type="submit" class="button selection-submit">Отправить заявку</button>
+      </form>
+      <p class="selection-required">* - Обязательные поля</p>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__coop contacts-coop">
+        <p class="contacts-coop__title">Приглашаем к сотрудничеству</p>
+        <p class="contacts-coop__address">ул. Большая конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map">
+        <!-- js-map -->
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer__logo">
