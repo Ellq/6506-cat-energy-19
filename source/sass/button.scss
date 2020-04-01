@@ -1,4 +1,5 @@
 .button {
+  display: block;
   width: 100%;
   height: 40px;
   padding: 0;
@@ -8,7 +9,9 @@
   line-height: 40px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: $base-color;
   border: none;
+  cursor: pointer;
 }
