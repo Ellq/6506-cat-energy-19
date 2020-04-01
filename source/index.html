@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -30,14 +31,14 @@
 
   <main>
     <section class="header-slogan">
-      <h1 class="header-slogan-title">Функциональное питание для котов</h1>
+      <h1 class="header-slogan__title">Функциональное питание для котов</h1>
       <div class="header-slogan__text">Занялся собой? Займись котом!</div>
+    </section>
+    <section class="programs">
       <button type="button" class="button">
         Подобрать программу
       </button>
-    </section>
-    <section class="programs">
-      <h2 class="visually-hidden">Программы питания дял кошек</h2>
+      <h2 class="visually-hidden">Программы питания для кошек</h2>
       <ul class="programs__list">
         <li class="programs__item">
           <h3 class="programs__title">Похудение</h3>
@@ -116,34 +117,35 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__logo">
-      <img src="img/placeholder.svg" alt="Логотип компании Cat Energy" class="footer__logo-img">
-    </div>
-    <ul class="footer__socials footer-socials">
-      <li class="footer-socials__item footer-socials__item--vk">
-        <a href="#">
-          <img src="img/placeholde.svg" alt="Ссылка на Вконтакте" width="22" height="12">
-          Вконтакте
+    <div class="container">
+      <div class="footer__logo">
+        <img src="img/placeholder.svg" alt="Логотип компании Cat Energy" class="footer__logo-img">
+      </div>
+      <ul class="footer__socials footer-socials">
+        <li class="footer-socials__item footer-socials__item--vk">
+          <a href="#">
+            <img src="img/placeholde.svg" alt="Ссылка на Вконтакте" width="22" height="12">
+            Вконтакте
+          </a>
+        </li>
+        <li class="footer-socials__item footer-socials__item--insta">
+          <a href="#" class="footer-socials__link footer-socials__link--insta">
+            <img src="img/placeholde.svg" alt="Ссылка на Instagram" width="17" height="17">
+            Instagram
+          </a>
+        </li>
+        <li class="footer-socials__item footer-socials__item--fb">
+          <a href="#" class="footer-socials__link footer-socials__link--fb">
+            <img src="img/placeholder.svg" alt="Ссылка на Facebook" width="10" height="19">
+            Facebook
+          </a>
+        </li>
+      </ul>
+      <div class="footer__developer footer-developer">
+        <a href="#" class="footer-developer__link">
+          HTML Academy
         </a>
-      </li>
-      <li class="footer-socials__item footer-socials__item--insta">
-        <a href="#" class="footer-socials__link footer-socials__link--insta">
-          <img src="img/placeholde.svg" alt="Ссылка на Instagram" width="17" height="17">
-          Instagram
-        </a>
-      </li>
-      <li class="footer-socials__item footer-socials__item--fb">
-        <a href="#" class="footer-socials__link footer-socials__link--fb">
-          <img src="img/placeholder.svg" alt="Ссылка на Facebook" width="10" height="19">
-          Facebook
-        </a>
-      </li>
-    </ul>
-    <div class="footer-developer">
-      <a href="#" class="footer-developer__link">
-        HTML Academy
-        <img src="img/htmlacademy.svg" alt="Ссылка на разработчика сайта https://htmlacademy.ru" width="27" height="34">
-      </a>
+      </div>
     </div>
   </footer>
 
