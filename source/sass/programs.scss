@@ -1,0 +1,52 @@
+.programs {
+  padding: 0 20px;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__item {
+  min-height: 266px;
+  margin: 0;
+  padding: 35px 21px 0px;
+  margin-bottom: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.programs__title {
+  margin: 0;
+  padding: 0;
+  padding-left: 71px;
+  margin-bottom: 35px;
+
+  font-family: $base-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.programs__text {
+  margin: 0;
+  padding-bottom: 23px;
+
+  color: #444444;
+}
+
+.programs__link {
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #111111;
+
+  border-top: 1px solid rgba(#000000, 0.1);
+}

@@ -1,0 +1,33 @@
+.catalog-more {
+  min-height: 210px;
+  padding-top: 80px;
+
+  border-bottom: 1px solid rgba(#000000, 0.1);
+}
+.catalog-more__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.catalog-more__text {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.catalog-more__link {
+  font-size: 16px;
+  color: #444444;
+
+  background-color: #f2f2f2;
+}
