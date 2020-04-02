@@ -1,0 +1,67 @@
+.selection__title {
+  margin: 0;
+  padding: 0;
+
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.selection__desc {
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+
+  font-family: $base-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.selection__form label {
+  font-family: $base-font;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.selection__form input[type="text"],
+.selection__form input[type="email"],
+.selection__form input[type="tel"] {
+  height: 45px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.selection__form textarea {
+  width: 100%;
+  padding: 15px;
+
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+}
+
+.selection-form__required {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.selection-form__submit {
+  margin-bottom: 20px;
+}
