@@ -9,3 +9,10 @@
   line-height: 60px;
   color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .page__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
