@@ -11,26 +11,28 @@
 <body>
 
   <header class="header">
-    <a href="" class="header__logo">
-      <img class="header__logo-img" src="img/placeholder.png" alt="Логотип компании Cat Energy" width="191" height="39">
-    </a>
-    <nav class="main-nav">
-      <button type="button" class="main-nav__toggle">Показать меню</button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Каталог продукции</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__top">
+      <a href="" class="header__logo">
+        <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип компании Cat Energy" width="191" height="39">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Показать меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="page">
     <section class="selection">
       <div class="container">
         <h1 class="base-title selection__title">Подбор программы</h1>
@@ -111,34 +113,35 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__logo">
-      <img src="img/placeholder.svg" alt="Логотип компании Cat Energy" class="footer__logo-img">
-    </div>
-    <ul class="footer__socials footer-socials">
-      <li class="footer-socials__item footer-socials__item--vk">
-        <a href="#">
-          <img src="img/placeholde.svg" alt="Ссылка на Вконтакте" width="22" height="12">
-          Вконтакте
+    <div class="container">
+      <div class="footer__logo">
+        <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип компании Cat Energy" width="128" height="24">
+      </div>
+      <ul class="footer__socials footer-socials">
+        <li class="footer-socials__item footer-socials__item--vk">
+          <a href="#">
+            <img src="img/placeholde.svg" alt="Ссылка на Вконтакте" width="22" height="12">
+            Вконтакте
+          </a>
+        </li>
+        <li class="footer-socials__item footer-socials__item--insta">
+          <a href="#" class="footer-socials__link footer-socials__link--insta">
+            <img src="img/placeholde.svg" alt="Ссылка на Instagram" width="17" height="17">
+            Instagram
+          </a>
+        </li>
+        <li class="footer-socials__item footer-socials__item--fb">
+          <a href="#" class="footer-socials__link footer-socials__link--fb">
+            <img src="img/placeholder.svg" alt="Ссылка на Facebook" width="10" height="19">
+            Facebook
+          </a>
+        </li>
+      </ul>
+      <div class="footer__developer footer-developer">
+        <a href="#" class="footer-developer__link">
+          HTML Academy
         </a>
-      </li>
-      <li class="footer-socials__item footer-socials__item--insta">
-        <a href="#" class="footer-socials__link footer-socials__link--insta">
-          <img src="img/placeholde.svg" alt="Ссылка на Instagram" width="17" height="17">
-          Instagram
-        </a>
-      </li>
-      <li class="footer-socials__item footer-socials__item--fb">
-        <a href="#" class="footer-socials__link footer-socials__link--fb">
-          <img src="img/placeholder.svg" alt="Ссылка на Facebook" width="10" height="19">
-          Facebook
-        </a>
-      </li>
-    </ul>
-    <div class="footer-developer">
-      <a href="#" class="footer-developer__link">
-        HTML Academy
-        <img src="img/htmlacademy.svg" alt="Ссылка на разработчика сайта https://htmlacademy.ru" width="27" height="34">
-      </a>
+      </div>
     </div>
   </footer>
 
