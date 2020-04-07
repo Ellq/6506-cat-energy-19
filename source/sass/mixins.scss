@@ -1,0 +1,26 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin mobile-container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin tablet-container {
+  width: 768px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin desktop-container {
+  width: 1320px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}

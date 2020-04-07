@@ -7,3 +7,9 @@
   line-height: 60px;
   color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .base-title {
+    font-size: 60px;
+  }
+}
