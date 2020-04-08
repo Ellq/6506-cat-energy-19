@@ -1,23 +1,47 @@
 .header-slogan {
-  position: relative;
+  z-index: 10;
 
-  height: 305px;
-  padding: 30px 35px 0px;
-  margin-bottom: 135px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 305px;
+  margin-bottom: 23px;
 
   text-align: center;
 
-  background-color: $base-color;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    right: -20px;
+    z-index: 1;
+
+    height: 305px;
+
+    background-color: #63a73a;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .header-slogan__wrapper {
+    position: relative;
+    z-index: 10;
+  }
 
   &::before {
     content: "";
 
     position: absolute;
     left: 20px;
-    bottom: -132px;
+    bottom: 44px;
+    z-index: 10;
+
     width: 280px;
     height: 270px;
 
@@ -27,7 +51,7 @@
 
 .header-slogan__title {
   margin: 0;
-  padding: 0;
+  padding: 30px 15px 0px;
   padding-bottom: 19px;
 
   font-family: $base-font;
@@ -37,7 +61,86 @@
 }
 
 .header-slogan__text {
+  margin-bottom: 302px;
+
   font-family: $base-font;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .header-slogan {
+    width: 708px;
+    padding-left: 121px;
+    padding-right: 30px;
+    padding-bottom: 529px;
+
+    &::before {
+      bottom: 0;
+      left: 0;
+
+      width: 709px;
+      height: 609px;
+
+      background-image: url(../img/index-can-tablet@1x.jpg);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header-slogan__title {
+    width: 420px;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-top: 65px;
+
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .header-slogan__text {
+    margin-bottom: 45px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+  }
+
+  .header-slogan__button {
+    width: 245px;
+    height: 52px;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-slogan {
+    @include desktop-container;
+
+    padding-left: 83px;
+    padding-top: 84px;
+    padding-bottom: 0px;
+
+    &::before {
+      left: 450px;
+      top: 0px;
+
+      width: 552px;
+      height: 499px;
+
+      background-image: url(../img/index-can-desktop@1x.png);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .header-slogan__title {
+    padding-top: 0;
+  }
 }

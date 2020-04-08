@@ -7,7 +7,41 @@
 }
 
 .main-nav__toggle {
+  display: none;
+
   font-size: 0;
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__link {
+    padding-bottom: 12px;
+    margin-left: 17px;
+    margin-right: 17px;
+
+    font-family: $base-font;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom: 2px solid $base-color;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav--index .main-nav__link {
+    color: #ffffff;
+
+    &:hover {
+      border-color: #ffffff;
+    }
+  }
 }

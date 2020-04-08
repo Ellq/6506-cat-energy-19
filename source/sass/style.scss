@@ -1,9 +1,12 @@
+@import "variables.scss";
+@import "mixins.scss";
+
 @import "fonts.scss";
 @import "global.scss";
-@import "variables.scss";
 @import "visually-hidden.scss";
 @import "container.scss";
 @import "base-title.scss";
+
 
 @import "button.scss";
 @import "header.scss";
@@ -21,7 +24,6 @@
 @import "example-numbers.scss";
 @import "example-slider.scss";
 @import "contacts.scss";
-@import "contacts-coop.scss";
 @import "catalog-add.scss";
 @import "catalog-gift.scss";
 @import "selection.scss";

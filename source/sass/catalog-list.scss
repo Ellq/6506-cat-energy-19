@@ -5,10 +5,12 @@
   list-style: none;
 }
 
-.catalog-item__title {
-  font-family: $base-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
 }
+
