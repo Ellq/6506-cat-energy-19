@@ -18,19 +18,53 @@
   text-transform: uppercase;
 }
 
+.selection__form fieldset {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+
+  border: none;
+}
+
+.selection__form legend {
+  font-family: $base-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+}
+
+
 .selection__form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
   font-family: $base-font;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.selection__border-wrapper {
+  padding: 25px 25px 25px 46px;
+  margin-top: 23px;
+
+  border: 1px solid #cdcdcd;
 }
 
 .selection__form input[type="text"],
 .selection__form input[type="email"],
 .selection__form input[type="tel"] {
+  width: auto;
+  flex-grow: 1;
   height: 45px;
   padding-left: 16px;
   padding-right: 16px;
+  margin-left: 16px;
 
   font-family: $base-font;
   font-size: 16px;
@@ -52,7 +86,7 @@
   border: 1px solid #cdcdcd;
 }
 
-.selection-form__required {
+.selection__form-required {
   margin: 0;
   padding: 0;
   margin-bottom: 33px;
@@ -62,6 +96,180 @@
   line-height: 16px;
 }
 
-.selection-form__submit {
+.selection__form--submit {
   margin-bottom: 20px;
+}
+
+.selection__form-line-title {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.selection__form-line-title legend {
+  @include mobile-container;
+}
+
+.selection__form-line-title span {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+
+    height: 3px;
+    width: 2000px;
+
+    background-color: #68b738;
+  }
+
+  &::after {
+    right: -2025px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection__form label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .selection__form input[type="text"],
+  .selection__form input[type="email"],
+  .selection__form input[type="tel"],
+  .selection__form textarea {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .selection__form fieldset {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+
+    border: none;
+  }
+
+  .selection__form legend {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    color: #111111;
+  }
+
+  .selection__border-wrapper {
+    padding: 35px 35px 35px 88px;
+    margin-top: 72px;
+
+    border: 1px solid #cdcdcd;
+  }
+
+  .selection__border-wrapper label:last-child {
+    margin-bottom: 0;
+  }
+
+  .selection__form .container {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  .selection__desc {
+    width: 325px;
+    padding: 0;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .selection__form-line-title {
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  .selection__form-line-title legend {
+    @include tablet-container;
+    padding-left: 68px;
+    padding-right: 68px;
+
+    position: relative;
+
+  }
+
+  .selection__form-line-title span {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 28px;
+
+      height: 3px;
+      width: 2000px;
+
+      background-color: #68b738;
+    }
+
+    &::before {
+      left: -2038px;
+    }
+
+    &::after {
+      right: -2038px;
+    }
+  }
+
+  .selection__form-submit-wrapper {
+    @include tablet-container;
+  }
+
+  .selection__form-submit {
+    width: 283px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .selection__form-line-title legend {
+    @include desktop-container;
+  }
+
+  .selection__border-wrapper {
+    margin: 0;
+  }
+
+  .selection__form .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .selection__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .selection__fieldset-wrapper label {
+    width: 570px;
+  }
+
+  .selection__fieldset-wrapper--checkbox label {
+    width: 25%;
+  }
+
+  .selection__border-wrapper {
+    width: 570px;
+  }
+
+  .selection__form-submit-wrapper {
+    @include desktop-container;
+
+    display: flex;
+  }
+
+  .selection__form-submit {
+    width: 568px;
+  }
 }

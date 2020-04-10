@@ -13,7 +13,8 @@
   <header class="header">
     <div class="header__top">
       <a href="" class="header__logo">
-        <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип компании Cat Energy" width="191" height="39">
+        <img class="header__logo-img" src="img/logo-mobile.svg" alt="Логотип компании Cat Energy" width="191"
+          height="39">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Показать меню</button>
@@ -40,62 +41,88 @@
       </div>
       <form action="https://echo.htmlacademy.ru" method="GET" class="selection__form">
         <fieldset>
-          <label for="selection-name">Имя:*</label>
-          <input type="text" name="selection-name" id="selection-name" placeholder="Барсик" required>
-          <label for="selection-weight">Вес (КГ):*</label>
-          <input type="text" name="selection-weight" id="selection-weight" placeholder="7" required>
-          <label for="selection-age">Возраст (лет):</label>
-          <input type="text" name="selection-age" id="selection-age" placeholder="7">
+          <div class="container selection__fieldset-wrapper">
+            <div>
+              <label for="selection-name">Имя:*
+                <input type="text" name="selection-name" id="selection-name" placeholder="Барсик" required>
+              </label>
+              <label for="selection-weight">Вес (КГ):*
+                <input type="text" name="selection-weight" id="selection-weight" placeholder="7" required>
+              </label>
+              <label for="selection-age">Возраст (лет):
+                <input type="text" name="selection-age" id="selection-age" placeholder="7">
+              </label>
+            </div>
+            <div class="selection__border-wrapper">
+              <label>
+                <input type="radio" name="selection-goal" id="selection-weight-loss" value="Похудение" checked>
+                Похудение
+              </label>
+              <label>
+                <input type="radio" name="selection-goal" id="selection-weight-gain" value="Набор массы">
+                Набор массы
+              </label>
+              <label>
+                <input type="radio" name="selection-goal" id="selection-dont-know" value="Не знаю (нужен ваш совет)">
+                Не знаю (нужен ваш совет)
+              </label>
+            </div>
+          </div>
         </fieldset>
         <fieldset>
-          <label>
-            <input type="radio" name="selection-goal" id="selection-weight-loss" value="Похудение" checked>
-            Похудение
-          </label>
-          <label>
-            <input type="radio" name="selection-goal" id="selection-weight-gain" value="Набор массы">
-            Набор массы
-          </label>
-          <label>
-            <input type="radio" name="selection-goal" id="selection-dont-know" value="Не знаю (нужен ваш совет)">
-            Не знаю (нужен ваш совет)
-          </label>
+          <div class="selection__form-line-title">
+            <legend>
+              <span>Контактные данные (владельца кота)</span>
+            </legend>
+          </div>
+          <div class="container selection__fieldset-wrapper">
+            <label for="selection-email">E-mail:*
+              <input type="email" name="selection-email" id="selection-email" placeholder="kuklachev@gmail.com"
+                required>
+            </label>
+            <label for="selection-phone">Телефон:*
+              <input type="tel" name="selection-phone" id="selection-phone" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
         </fieldset>
         <fieldset>
-          <legend>
-            Контактные данные (владельца кота)
-          </legend>
-          <label for="selection-email">E-mail:*</label>
-          <input type="email" name="selection-email" id="selection-email" placeholder="kuklachev@gmail.com" required>
-          <label for="selection-phone">Телефон:*</label>
-          <input type="tel" name="selection-phone" id="selection-phone" placeholder="8 (960) 900-60-90" required>
+          <div class="selection__form-line-title">
+            <legend><span>Комментарий</span></legend>
+          </div>
+          <div class="container">
+            <textarea name="selection-comment" id="selection-comment" cols="30" rows="10"
+              placeholder="Раccкажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset>
-          <legend>Комментарий</legend>
-          <textarea name="selection-comment" id="selection-comment" cols="30" rows="10" placeholder="Раccкажите обо всех повадках кота"></textarea>
+          <div class="selection__form-line-title">
+            <legend><span>Дополнительно</span></legend>
+          </div>
+          <div class="container selection__fieldset-wrapper selection__fieldset-wrapper--checkbox">
+            <label>
+              <input type="checkbox" name="selection-sweetener" id="selection-sweetener" value="Сахарозаменитель"
+                checked>
+              Сахарозаменитель
+            </label>
+            <label>
+              <input type="checkbox" name="selection-water" id="selection-water" value="Питьевая вода">
+              Питьевая вода
+            </label>
+            <label>
+              <input type="checkbox" name="selection-milk" id="selection-milk" value="Молоко">
+              Молоко
+            </label>
+            <label>
+              <input type="checkbox" name="selection-vitamins" id="selection-vitamins" value="Витамины">
+              Витамины
+            </label>
+          </div>
         </fieldset>
-        <fieldset>
-          <legend>Дополнительно</legend>
-          <label>
-            <input type="checkbox" name="selection-sweetener" id="selection-sweetener" value="Сахарозаменитель" checked>
-            Сахарозаменитель
-          </label>
-          <label>
-            <input type="checkbox" name="selection-water" id="selection-water" value="Питьевая вода">
-            Питьевая вода
-          </label>
-          <label>
-            <input type="checkbox" name="selection-milk" id="selection-milk" value="Молоко">
-            Молоко
-          </label>
-          <label>
-            <input type="checkbox" name="selection-vitamins" id="selection-vitamins" value="Витамины">
-            Витамины
-          </label>
-        </fieldset>
-        <button type="submit" class="button selection-form__submit">Отправить заявку</button>
+        <div class="selection__form-submit-wrapper">
+          <button type="submit" class="button selection__form-submit">Отправить заявку</button>
+          <p class="selection__form-required">* - Обязательные поля</p>
+        </div>
       </form>
-      <p class="selection-form__required">* - Обязательные поля</p>
     </section>
 
     <section class="contacts contacts--grey">
@@ -115,7 +142,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип компании Cat Energy" width="128" height="24">
+        <img class="footer__logo-img" src="img/logo-footer.svg" alt="Логотип компании Cat Energy" width="128"
+          height="24">
       </div>
       <ul class="footer__socials footer-socials">
         <li class="footer-socials__item footer-socials__item--vk">
