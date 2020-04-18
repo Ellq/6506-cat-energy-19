@@ -1,7 +1,7 @@
 .programs {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
+  @include mobile-container;
+
+  padding-bottom: 17px;
 }
 
 .programs__list {
@@ -13,12 +13,17 @@
 .programs__item {
   position: relative;
 
-  min-height: 266px;
+  // min-height: 266px;
   margin: 0;
   padding: 30px 21px 0px;
   margin-bottom: 20px;
 
   background-color: #f2f2f2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::before {
     content: "";
 
@@ -46,7 +51,7 @@
   margin: 0;
   padding: 0;
   padding-left: 71px;
-  margin-bottom: 35px;
+  margin-bottom: 29px;
 
   font-family: $base-font;
   font-size: 24px;
@@ -106,15 +111,14 @@
 
 @media (min-width: $tablet-width) {
   .programs {
-    width: 768px;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include tablet-container;
   }
 
   .programs__item {
-    padding-top: 81px;
-    padding-left: 55px;
-    padding-bottom: 62px;
+    padding-top: 78px;
+    padding-left: 54px;
+    padding-bottom: 58px;
+    margin-bottom: 30px;
 
     &::before {
       left: auto;
@@ -149,12 +153,17 @@
   }
 
   .programs__title {
+    padding-left: 0;
+    margin-bottom: 25px;
+
+    font-size: 36px;
+    line-height: 37px;
   }
 
   .programs__text {
     width: 375px;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
 
     font-size: 16px;
     line-height: 24px;
@@ -183,8 +192,8 @@
 
   .programs__item {
     width: 570px;
-    padding: 80px 52px 60px;
-    margin-bottom: 75px;
+    padding: 76px 52px 58px;
+    margin-bottom: 0;
 
     &::before {
       left: 52px;
@@ -217,7 +226,7 @@
 
   .programs__title {
     margin-bottom: 75px;
-    padding-left: 164px;
+    padding-left: 162px;
 
     font-size: 36px;
     line-height: 37px;
@@ -225,5 +234,10 @@
 
   .programs__text {
     width: 100%;
+    margin-bottom: 31px;
+  }
+
+  .programs__text br {
+    display: none;
   }
 }
