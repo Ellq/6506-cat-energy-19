@@ -1,7 +1,9 @@
 .catalog-item {
+  @include mobile-container;
+
   position: relative;
 
-  padding: 25px 0;
+  padding-bottom: 20px;
   border-bottom: 1px solid #ededed;
 }
 
@@ -10,7 +12,9 @@
 }
 
 .catalog-item__title {
+  margin: 0;
   width: 80px;
+  margin-bottom: 14px;
 
   font-family: $base-font;
   font-size: 16px;
@@ -25,18 +29,20 @@
 
 .catalog-item__button {
   width: 100%;
+
+  font-size: 16px;
 }
 
 .catalog-item__content {
+  padding-top: 21px;
   flex-grow: 1;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-item {
     width: 324px;
-    // min-height: 431px;
     margin-bottom: 140px;
-    padding: 165px 38px 40px;
+    padding: 143px 38px 38px;
 
     background-color: #f2f2f2;
     border: none;
@@ -44,6 +50,8 @@
 
   .catalog-item__img {
     position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .catalog-item__wrapper {
@@ -53,7 +61,7 @@
   .catalog-item__title {
     width: auto;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
 
     font-size: 20px;
     text-align: center;
