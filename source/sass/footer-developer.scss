@@ -1,9 +1,32 @@
 .footer-developer {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 22px;
+  padding-bottom: 28px;
 }
 
 .footer-developer__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   font-size: 16px;
   line-height: 16px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $base-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer-developer__link span {
+    margin-right: 23px;
+  }
+
+  .footer-developer {
+    padding-top: 32px;
+  }
 }

@@ -1,8 +1,8 @@
 .page__title {
   margin: 0;
   padding: 0;
-  padding-top: 31px;
-  padding-bottom: 36px;
+  padding-top: 19px;
+  padding-bottom: 29px;
 
   font-family: $base-font;
   font-size: 36px;
@@ -12,7 +12,15 @@
 
 @media (min-width: $tablet-width) {
   .page__title {
+    padding-top: 43px;
+
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__title {
+    padding-top: 48px;
   }
 }
