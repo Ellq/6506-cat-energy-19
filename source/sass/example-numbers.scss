@@ -17,13 +17,14 @@
 
 .example-numbers__item span {
   position: absolute;
-  bottom: -15px;
+  bottom: -16px;
   left: 50%;
   transform: translateX(-50%);
 
   padding-left: 15px;
   padding-right: 15px;
 
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
@@ -36,10 +37,10 @@
     width: 162px;
     min-height: 72px;
     margin-right: 42px;
-    padding-top: 20px;
+    padding-top: 13px;
 
     font-size: 30px;
-    font-size: 37px;
+    line-height: 37px;
     color: #111111;
   }
 
@@ -56,6 +57,13 @@
     color: #444444;
     white-space: nowrap;
 
-    background-color: #eaeaea;
+    background-color: #ffffff;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .example-numbers__item span {
+    background-color: #f2f2f2;
+  }
+
 }
