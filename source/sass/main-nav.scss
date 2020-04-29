@@ -149,8 +149,25 @@
     color: #222222;
     text-transform: uppercase;
 
-    &:hover {
-      border-bottom: 2px solid $base-color;
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+  }
+
+  .main-nav__item--active .main-nav__link {
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
     }
   }
 }

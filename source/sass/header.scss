@@ -1,5 +1,7 @@
 .header {
   position: relative;
+
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .header__top {
@@ -22,6 +24,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header {
+    border: none;
+  }
+
   .header__top {
     @include tablet-container;
 
