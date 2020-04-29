@@ -1,5 +1,6 @@
 .example {
   padding-top: 18px;
+  padding-bottom: 39px;
 
   background-color: #f2f2f2;
 }
@@ -30,19 +31,48 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .example__slider {
   @include mobile-container;
 }
 
+.example__slider-wrapper {
+  padding-top: 35px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
+    padding-top: 43px;
+    padding-bottom: 0;
+
     background-color: #ffffff;
   }
 
+  .example__slider {
+    padding-bottom: 67px;
+  }
+
+  .example__slider-wrapper {
+    position: relative;
+    padding-top: 0;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+
+      background-color: #f2f2f2;
+    }
+  }
+
   .example__title {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
   }
 
   .example__numbers {
@@ -50,7 +80,7 @@
   }
 
   .example__text {
-    margin-bottom: 55px;
+    margin-bottom: 53px;
 
     font-size: 16px;
     line-height: 24px;
@@ -58,12 +88,17 @@
 
   .example__cost {
     width: 175px;
-    padding-top: 13px;
+    padding-top: 12px;
     margin-left: auto;
 
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .example__cost span {
+    display: block;
+    padding-top: 9px;
   }
 
   .example__slider-wrapper {
@@ -79,11 +114,10 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    margin-top: 175px;
     padding-top: 0;
-    padding-bottom: 75px;
+    padding-bottom: 0;
 
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
   }
 
   .example__wrapper {
@@ -91,35 +125,52 @@
 
     display: flex;
     justify-content: space-between;
-  }
 
-  .example .container,
-  .example__slider-wrapper {
-    margin: -130px 0 0 0;
   }
 
   .example .container {
-    width: 430px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: -136px;
+  }
+
+  .example .container {
+    width: 445px;
     padding: 0;
   }
 
+  .example__text {
+    margin-bottom: 69px;
+  }
+
   .example__title {
-    margin-bottom: 142px;
+    margin-bottom: 146px;
   }
 
   .example__slider-wrapper {
+    margin-top: 0;
+    padding-bottom: 157px;
+
     background-color: transparent;
+
+    &::before {
+      background-color: transparent;
+    }
   }
 
   .example__cost {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 50px;
     width: auto;
+    vertical-align: top;
+
     text-align: left;
   }
 
   .example__cost span {
-    margin-left: 64px;
+    display: inline-block;
+
+    margin-left: 59px;
   }
 
   .example__slider {
