@@ -30,7 +30,7 @@
 
   transition: 0.4s;
 
-  &:last-child {
+  &--after {
     opacity: 0;
   }
 }
@@ -97,6 +97,10 @@ input:checked + .example-slider__toggle-elem {
 }
 
 @media (min-width: $tablet-width) {
+  .example-slider__wrapper {
+    height: 323px;
+  }
+
   .example-slider__controls {
     position: relative;
 
@@ -105,6 +109,7 @@ input:checked + .example-slider__toggle-elem {
 
   .example-slider__controls p {
     padding-bottom: 6px;
+    padding-top: 4px;
 
     font-size: 20px;
 
@@ -123,7 +128,49 @@ input:checked + .example-slider__toggle-elem {
   }
 
   .example-slider__item {
-    top: -169px;
+    top: auto;
+    bottom: -24px;
+
+    width: 100%;
+
+    &--before {
+      left: 0;
+
+      width: 50%;
+
+      overflow: hidden;
+      z-index: 10;
+
+      transform: translateX(0);
+    }
+
+    &--before img {
+      margin-left: 16px;
+      height: 499px;
+      width: 690px;
+      max-width: 690px;
+    }
+
+    &--after {
+      right: 0;
+
+      width: 100%;
+
+      overflow: hidden;
+      opacity: 1;
+
+      clip: rect(auto, 690px, auto, 354px);
+    }
+
+    &--after img {
+      margin-left: auto;
+      max-width: 690px;
+    }
+  }
+
+  .example-slider__item img {
+    height: 517px;
+    width: 690px;
   }
 
   input[type=range].example-slider__range-input {
@@ -217,6 +264,16 @@ input:checked + .example-slider__toggle-elem {
 @media (min-width: $desktop-width) {
   .example-slider__item {
     top: -190px;
+
+    &--before {
+      left: -95px;
+      width: 381px;
+    }
+
+    &--after {
+      left: 207px;
+      clip: rect(auto, 690px, auto, 364px);
+    }
   }
 
 }
