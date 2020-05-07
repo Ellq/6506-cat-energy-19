@@ -307,6 +307,8 @@ input[type="checkbox"]:checked + .selection__checkbox-label {
 
   width: 18px;
   height: 14px;
+
+  fill: #222222;
 }
 
 .selection__phone-icon {
@@ -316,6 +318,8 @@ input[type="checkbox"]:checked + .selection__checkbox-label {
 
   width: 21px;
   height: 21px;
+
+  fill: #222222;
 }
 
 input:focus + .selection__email-icon,
