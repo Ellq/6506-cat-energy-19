@@ -15,8 +15,12 @@
     opacity: 0.3;
   }
 
-  &:hover path,
-  &:focus path {
+  svg {
+    fill: #666666;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: $base-color;
   }
 }
