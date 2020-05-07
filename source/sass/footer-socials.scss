@@ -21,21 +21,20 @@
 .footer-socials__link {
   display: block;
 
-  &:hover path,
-  &:focus path,
-  &:hover circle,
-  &:focus circle {
+  &:hover svg,
+  &:focus svg {
     fill: $base-color;
   }
 
-  &:active path,
-  &:active circle {
+  &:active svg{
     opacity: 0.3;
   }
 }
 
 .footer-socials__link svg {
   display: block;
+
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,6 +47,11 @@
     &--fb svg {
       width: 14px;
       height: 28px;
+    }
+
+    &--insta svg {
+      width: 23px;
+      height: 23px;
     }
   }
 
