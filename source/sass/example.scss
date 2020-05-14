@@ -51,12 +51,17 @@
   }
 
   .example__slider {
+    @include tablet-container;
+
     padding-bottom: 67px;
   }
 
   .example__slider-wrapper {
     position: relative;
     padding-top: 0;
+    margin-top: 255px;
+
+    background-color: #eaeaea;
 
     &::before {
       content: "";
@@ -100,16 +105,6 @@
     display: block;
     padding-top: 9px;
   }
-
-  .example__slider-wrapper {
-    margin-top: 255px;
-
-    background-color: #eaeaea;
-  }
-
-  .example__slider {
-    @include tablet-container;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -125,16 +120,12 @@
 
     display: flex;
     justify-content: space-between;
-
   }
 
   .example .container {
     margin-right: 0;
     margin-left: 0;
     margin-top: -136px;
-  }
-
-  .example .container {
     width: 445px;
     padding: 0;
   }
