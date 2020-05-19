@@ -64,6 +64,14 @@
     }
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .header--index {
+      &::before {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
+
   .header__top {
     @include desktop-container;
 

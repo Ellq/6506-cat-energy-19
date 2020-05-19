@@ -323,7 +323,7 @@ input:focus + .selection__phone-icon {
   fill: #68b738;
 }
 
-.selection__form input.selection__input--error:required {
+.selection__form input.selection__input--error {
   border: 2px solid #ff8282;
 
   &:hover,
@@ -332,11 +332,11 @@ input:focus + .selection__phone-icon {
   }
 }
 
-.selection__input--error:required + svg {
+.selection__input--error + svg {
   fill: #ff8282;
 }
 
-.selection__input--error:required:focus + svg {
+.selection__input--error:focus + svg {
   fill: #ff8282;
 }
 
