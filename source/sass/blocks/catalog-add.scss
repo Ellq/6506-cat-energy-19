@@ -8,7 +8,7 @@
   position: relative;
 
   margin: 0;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 34px;
 
   font-family: $base-font;
@@ -96,6 +96,7 @@
 
   .catalog-add__title {
     padding-left: 37px;
+    padding-top: 31px;
     padding-bottom: 80px;
 
     font-size: 36px;
@@ -137,6 +138,8 @@
 
   .catalog-add__item-title {
     margin-bottom: 26px;
+    max-width: 50%;
+    padding-right: 15px;
 
     font-size: 20px;
     line-height: 20px;
@@ -148,6 +151,7 @@
 
   .catalog-add__chars {
     width: auto;
+    max-width: 50%;
 
     font-size: 16px;
     line-height: 20px;
@@ -166,6 +170,7 @@
 @media (min-width: $desktop-width) {
   .catalog-add {
     margin-top: -95px;
+    padding-bottom: 45px;
   }
 
   .catalog-add__wrapper {
@@ -222,6 +227,7 @@
   .catalog-add__item-title {
     margin: 0;
     padding: 0;
+    max-width: 300px;
   }
 
   .catalog-add__buy {

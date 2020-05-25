@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   padding-right: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 
   font-family: $base-font;
   font-size: 14px;
@@ -97,8 +97,17 @@
 
 .selection__form input[type="text"]:focus,
 .selection__form input[type="email"]:focus,
-.selection__form input[type="tel"]:focus,
+.selection__form input[type="tel"]:focus {
+  padding-left: 13px;
+
+  border: 2px solid #444444;
+  outline: 0;
+}
+
 .selection__form textarea:focus {
+  padding-left: 12px;
+  padding-top: 12px;
+
   border: 2px solid #444444;
   outline: 0;
 }
@@ -205,12 +214,13 @@ input[type="radio"]:checked + .selection__radio-label {
 
 .selection__form-line-title span {
   position: relative;
+  display: inline-block;
 
   &::after {
     content: "";
 
     position: absolute;
-    top: 20px;
+    top: 13px;
     right: -2025px;
 
     height: 3px;
@@ -328,6 +338,8 @@ input:focus + .selection__phone-icon {
 
   &:hover,
   &:focus {
+    padding-left: 14px;
+
     border: 2px solid #ff8282;
   }
 }
@@ -343,6 +355,10 @@ input:focus + .selection__phone-icon {
 @media (min-width: $tablet-width) {
   .selection {
     padding-top: 29px;
+  }
+
+  .selection__title {
+    padding-top: 28px;
   }
 
   .selection__form {
@@ -400,6 +416,7 @@ input:focus + .selection__phone-icon {
     margin-bottom: 10px;
     padding-top: 24px;
     padding-left: 27px;
+    padding-bottom: 26px;
 
     border: 1px solid #e6e6e6;
   }
@@ -456,6 +473,10 @@ input:focus + .selection__phone-icon {
     position: relative;
   }
 
+  .selection__form-line-title br {
+    display: none;
+  }
+
   .selection__form-line-title span {
     position: relative;
 
@@ -464,7 +485,7 @@ input:focus + .selection__phone-icon {
       content: "";
 
       position: absolute;
-      top: 30px;
+      top: 22px;
 
       height: 3px;
       width: 2000px;
@@ -516,6 +537,11 @@ input:focus + .selection__phone-icon {
       padding-left: 0;
       padding-right: 0;
     }
+
+    &--contacts {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .selection__checkbox-wrapper {
@@ -564,6 +590,10 @@ input:focus + .selection__phone-icon {
     padding-top: 32px;
   }
 
+  .selection__title {
+    padding-top: 13px;
+  }
+
   .selection__form {
     padding-bottom: 82px;
   }
@@ -610,7 +640,7 @@ input:focus + .selection__phone-icon {
     width: 570px;
   }
 
-  .selection__fieldset-wrapper--contacts label {
+  .selection__fieldset-wrapper--contacts {
     margin-bottom: -20px;
   }
 

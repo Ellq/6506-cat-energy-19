@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   padding-right: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 
   font-family: $base-font;
   font-size: 14px;
@@ -99,6 +99,8 @@
 .selection__form input[type="email"]:focus,
 .selection__form input[type="tel"]:focus,
 .selection__form textarea:focus {
+  padding-left: 13px;
+
   border: 2px solid #444444;
   outline: 0;
 }
@@ -610,7 +612,7 @@ input:focus + .selection__phone-icon {
     width: 570px;
   }
 
-  .selection__fieldset-wrapper--contacts label {
+  .selection__fieldset-wrapper--contacts {
     margin-bottom: -20px;
   }
 

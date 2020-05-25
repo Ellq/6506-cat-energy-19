@@ -48,6 +48,7 @@
 @media (min-width: $tablet-width) {
   .catalog-item {
     width: 324px;
+    min-height: 431px;
     margin-bottom: 140px;
     padding-left: 0;
     padding-right: 0;
@@ -105,6 +106,8 @@
 @media (min-width: $desktop-width) {
   .catalog-item {
     width: 245px;
+    margin-bottom: 142px;
+    padding-bottom: 40px;
   }
 
   .catalog-item__img {

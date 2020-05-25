@@ -1,6 +1,8 @@
-.example-numbers__item {
-  position: relative;
+.example-numbers {
+  text-align: center;
+}
 
+.example-numbers__number {
   width: 124px;
   min-height: 56px;
   padding-top: 13px;
@@ -15,38 +17,41 @@
   border-radius: 3px;
 }
 
-.example-numbers__item span {
-  position: absolute;
-  bottom: -16px;
-  left: 50%;
-  transform: translateX(-50%);
-
+.example-numbers__desc {
+  display: inline-block;
+  width: 87px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
   padding-left: 15px;
   padding-right: 15px;
 
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Arial Narrow", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+  text-align: center;
 
   background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
   .example-numbers__item {
+    margin-right: 42px;
+  }
+
+  .example-numbers__number {
     width: 162px;
     min-height: 72px;
-    margin-right: 42px;
-    padding-top: 13px;
+    padding-top: 14px;
+    margin-bottom: -10px;
 
     font-size: 30px;
     line-height: 37px;
     color: #111111;
   }
 
-  .example-numbers__item span {
-    bottom: -5px;
-
+  .example-numbers__desc {
     min-width: 100px;
     width: auto;
     padding-left: 9px;
@@ -62,7 +67,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .example-numbers__item span {
+  .example-numbers__desc {
     background-color: #f2f2f2;
   }
 }

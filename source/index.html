@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="fonts/oswaldregular.woff">
-  <link rel="preload" href="fonts/oswaldmedium.woff">
+  <link rel="preload" as="font" href="fonts/oswaldregular.woff">
+  <link rel="preload" as="font" href="fonts/oswaldmedium.woff">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -21,7 +21,7 @@
             height="39">
         </picture>
       </a>
-      <button class="main-nav__toggle main-nav__toggle--closed" type="button">Показать меню</button>
+      <button class="main-nav-toggle main-nav-toggle--nojs main-nav-toggle--closed" type="button">Показать меню</button>
       <nav class="main-nav main-nav--index main-nav--nojs main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -91,7 +91,7 @@
         </li>
         <li class="how-it-works__item">
           <p>
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
           </p>
         </li>
       </ul>
@@ -106,12 +106,16 @@
             изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__numbers example-numbers">
             <div class="example-numbers__item">
-              5 кг
-              <span>снижение веса</span>
+              <div class="example-numbers__number">
+                5 кг
+              </div>
+              <span class="example-numbers__desc">снижение веса</span>
             </div>
             <div class="example-numbers__item">
-              60 дней
-              <span>затрачено времени</span>
+              <div class="example-numbers__number">
+                60 дней
+              </div>
+              <span class="example-numbers__desc">затрачено времени</span>
             </div>
             <p class="example__cost">Затраты на питание: <span>15 000 руб.</span></p>
           </div>
@@ -169,8 +173,8 @@
     <section class="contacts">
       <div class="contacts__coop-wrapper">
         <div class="contacts__coop">
-          <p class="contacts__coop-title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__coop-address">ул. Большая конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+          <p class="contacts__coop-title">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <p class="contacts__coop-address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
       <div class="contacts__map">
@@ -191,28 +195,28 @@
       <ul class="footer__socials footer-socials">
         <li class="footer-socials__item footer-socials__item--vk">
           <a href="vk.com" class="footer-socials__link footer-socials__link--vk">
-            <svg width="22" height="12">
+            <svg width="22" height="12" aria-label="Вконтакте">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer-socials__item footer-socials__item--insta">
           <a href="#" class="footer-socials__link footer-socials__link--insta">
-            <svg width="17" height="17">
+            <svg width="17" height="17" aria-label="Instagram">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="footer-socials__item footer-socials__item--fb">
           <a href="#" class="footer-socials__link footer-socials__link--fb">
-            <svg width="10" height="19">
+            <svg width="10" height="19" aria-label="Facebook">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
       </ul>
       <div class="footer__developer footer-developer">
-        <a href="#" class="footer-developer__link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-developer__link">
           <span>HTML Academy</span>
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
