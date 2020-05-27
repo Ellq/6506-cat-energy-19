@@ -583,6 +583,11 @@ input:focus + .selection__phone-icon {
     top: 16px;
     right: 17px;
   }
+
+  .selection__form textarea:focus {
+    padding-left: 17px;
+    padding-top: 13px;
+  }
 }
 
 @media (min-width: $desktop-width) {
